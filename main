@@ -9,4 +9,4 @@ int main(void)
     if(n == 0) break; 
   }
   return 0;
-  }
+}
