@@ -1,3 +1,4 @@
+//수를 입력받아 음수양수 홀짝구분하는 소스파일
 #include <stdio.h>
 int main(void)
 { 
@@ -7,6 +8,17 @@ int main(void)
     printf("수를 입력하시오 : ");
     scanf_s("%d", &n, sizeof(int));
     if(n == 0) break; 
+    
+    if(n > 0)
+    {
+    	printf("양수이고 ");
+    }else if(n < 0)
+    {
+    	printf("음수이고 ");	
+    }else
+    {
+    	printf("error\n");
+    }
     
     switch (n % 2)
 		{
