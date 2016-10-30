@@ -5,8 +5,21 @@ int main(void)
   while(1)
   {  
     printf("수를 입력하시오 : ");
-    scanf("%d", &n);
+    scanf_s("%d", &n, sizeof(int));
     if(n == 0) break; 
+    
+    switch (n % 2)
+		{
+		case 0:
+			printf("짝수입니다.\n");
+			break;
+		case 1:
+			printf("홀수입니다.\n");
+			break;
+		default:
+			printf("error\n");
+			break;
+		}
   }
   return 0;
 }
